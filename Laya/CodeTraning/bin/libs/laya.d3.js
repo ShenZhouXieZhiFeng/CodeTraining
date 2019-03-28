@@ -11340,7 +11340,7 @@ var Shader3D=(function(){
 		if (Shader3D._propertyNameMap[name]!=null){
 			return Shader3D._propertyNameMap[name];
 			}else {
-			var id=Shader3D._propertyNameCounter++;
+			var id=++Shader3D._propertyNameCounter;
 			Shader3D._propertyNameMap[name]=id;
 			return id;
 		}
