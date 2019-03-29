@@ -61,14 +61,20 @@ export default class GameUI
         // }));
         // box.meshRenderer.material = spMat;
 
-        let spMat: HighLightMaterial = new HighLightMaterial();
-        await spMat.compile();
-        Laya.Texture2D.load("res/layabox.png", Laya.Handler.create(null, (tex) =>
+        await CustomMaterial.compile();
+
+        let spMat: CustomMaterial = new CustomMaterial();
+        Laya.Texture2D.load("res/timg.jpg", Laya.Handler.create(null, (tex) =>
         {
-            spMat.albedoTexture = tex;
+            spMat.texture = tex;
         }));
-        // spMat.albedoColor = new Laya.Vector4(1, 0, 0, 1);
         box.meshRenderer.material = spMat;
+
+        // Laya.Texture2D.load("res/layabox.png", Laya.Handler.create(null, (tex) =>
+        // {
+        //     spMat.albedoTexture = tex;
+        // }));
+        // spMat.albedoColor = new Laya.Vector4(1, 0, 0, 1);
 
 
         window['spMat'] = spMat;
