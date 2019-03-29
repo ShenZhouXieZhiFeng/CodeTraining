@@ -2,8 +2,8 @@ import { ui } from "./../ui/layaMaxUI";
 import RES, { RESD3 } from "./RES";
 import { CubeController } from "./CubeController";
 import { CustomMaterial } from "./MaterialAndShader/CustomMaterial";
-import { Sprited3DMaterial } from "./MaterialAndShader/Sprited3DMaterial";
 import { UnlitMaterial } from "./MaterialAndShader/UnlitMaterial";
+import { HighLightMaterial } from "./MaterialAndShader/HighLightMaterial";
 
 export default class GameUI
 {
@@ -41,12 +41,7 @@ export default class GameUI
         // }));
         // box.meshRenderer.material = spMat;
 
-        let spMat: UnlitMaterial = new UnlitMaterial();
-        Laya.Texture2D.load("res/layabox.png", Laya.Handler.create(null, (tex) =>
-        {
-            spMat.albedoTexture = tex;
-        }));
-        box.meshRenderer.material = spMat;
+        this.setMat(box);
 
         // let material: Laya.BlinnPhongMaterial = new Laya.BlinnPhongMaterial();
         // Laya.Texture2D.load("res/layabox.png", Laya.Handler.create(null, function (tex: Laya.Texture2D)
@@ -54,5 +49,28 @@ export default class GameUI
         //     material.albedoTexture = tex;
         // }));
         // box.meshRenderer.material = material;
+    }
+
+    private async setMat(box)
+    {
+        // let spMat: UnlitMaterial = new UnlitMaterial();
+        // await spMat.compile();
+        // Laya.Texture2D.load("res/layabox.png", Laya.Handler.create(null, (tex) =>
+        // {
+        //     spMat.albedoTexture = tex;
+        // }));
+        // box.meshRenderer.material = spMat;
+
+        let spMat: HighLightMaterial = new HighLightMaterial();
+        await spMat.compile();
+        Laya.Texture2D.load("res/layabox.png", Laya.Handler.create(null, (tex) =>
+        {
+            spMat.albedoTexture = tex;
+        }));
+        // spMat.albedoColor = new Laya.Vector4(1, 0, 0, 1);
+        box.meshRenderer.material = spMat;
+
+
+        window['spMat'] = spMat;
     }
 }

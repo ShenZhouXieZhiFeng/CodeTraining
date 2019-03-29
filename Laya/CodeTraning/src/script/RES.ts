@@ -7,6 +7,7 @@ const RES_PATH_CONFIG: string = "res/configs";	//配置文件
 const RES_PATH_AUDIO: string = "res/sounds";   	//音频,不能预先加载
 const RES_PATH_VIEW: string = "res/view";       //导出的UI文件
 const RES_PATH_ANIMATION: string = "res/animation"; // 动画文件
+const RES_PATH_SHADER: string = "res/glsl";     // shader文件
 ////3D类型资源////
 const RES_PATH_D3_SCENES: string = "res/d3/scenes";	//场景
 const RES_PATH_D3_MODELS: string = "res/d3/models";	//模型
@@ -29,7 +30,7 @@ export default class RES
     public static joinResPath(resName: string): string
     {
         // 如果已经是全路径，就不做凭拼接
-        if(resName.indexOf("res/") >= 0)
+        if (resName.indexOf("res/") >= 0)
         {
             return resName;
         }
@@ -40,7 +41,7 @@ export default class RES
             case "atlas":
                 path = RES_PATH_ATLAS;
                 // 对序列帧动画做专门处理
-                if(resName.indexOf("anim") >= 0)
+                if (resName.indexOf("anim") >= 0)
                 {
                     path = RES_PATH_ANIMATION;
                 }
@@ -69,6 +70,9 @@ export default class RES
                 break;
             case "lh":
                 path = RES_PATH_D3_MODELS;
+                break;
+            case "glsl":
+                path = RES_PATH_SHADER;
                 break;
             default:
                 break;

@@ -37,13 +37,13 @@ void main()
         discard;
 #endif
     gl_FragColor = color;
-#ifdef FOG
-    float lerpFact = clamp((1.0 / gl_FragCoord.w - u_FogStart) / u_FogRange, 0.0, 1.0);
-    #ifdef ADDTIVEFOG
-        gl_FragColor.rgb = mix(gl_FragColor.rgb, vec3(0.0), lerpFact);
-    #else
-        gl_FragColor.rgb = mix(gl_FragColor.rgb, u_FogColor, lerpFact);
-    #endif
-#endif
+// #ifdef FOG
+//     float lerpFact = clamp((1.0 / gl_FragCoord.w - u_FogStart) / u_FogRange, 0.0, 1.0);
+//     #ifdef ADDTIVEFOG
+//         gl_FragColor.rgb = mix(gl_FragColor.rgb, vec3(0.0), lerpFact);
+//     #else
+//         gl_FragColor.rgb = mix(gl_FragColor.rgb, u_FogColor, lerpFact);
+//     #endif
+// #endif
 }
 		
