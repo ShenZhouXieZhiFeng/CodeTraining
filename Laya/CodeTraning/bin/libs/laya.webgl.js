@@ -9518,7 +9518,8 @@ var RenderTexture2D=(function(_super){
 					gl.framebufferRenderbuffer(/*laya.webgl.WebGLContext.FRAMEBUFFER*/0x8D40,/*laya.webgl.WebGLContext.DEPTH_STENCIL_ATTACHMENT*/0x821A,/*laya.webgl.WebGLContext.RENDERBUFFER*/0x8D41,this._depthStencilBuffer);
 					break ;
 				default :
-					console.log("RenderTexture: unkonw depth format.");
+					// console.log("RenderTexture: unkonw depth format.");
+					break;
 				}
 		}
 		gl.bindFramebuffer(/*laya.webgl.WebGLContext.FRAMEBUFFER*/0x8D40,null);

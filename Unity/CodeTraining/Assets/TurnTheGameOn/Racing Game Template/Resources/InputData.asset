@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0ce9153cf1fde4887615b2bd1af47b, type: 3}
+  m_Name: InputData
+  m_EditorClassIdentifier: 
+  useMobileController: 0
+  mobileController: {fileID: 1000013651243190, guid: d9ab75b9c2e32304cb197156d2b1b585,
+    type: 2}
+  pauseKey: 27
+  cameraSwitchKey: 99
+  nitroKey: 110
+  shiftUp: 115
+  shiftDown: 120
+  lookBack: 98
+  pauseJoystick: 339
+  _pauseJoystick: 10
+  cameraSwitchJoystick: 333
+  _cameraSwitchJoystick: 4
+  nitroJoystick: 334
+  _nitroJoystick: 5
+  shiftUpJoystick: 337
+  _shiftUpJoystick: 8
+  shiftDownJoystick: 336
+  _shiftDownJoystick: 7
+  lookBackJoystick: 335
+  _lookBackJoystick: 6

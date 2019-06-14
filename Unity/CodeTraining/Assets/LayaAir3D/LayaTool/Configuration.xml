@@ -28,12 +28,12 @@
     <OtherSetting>True</OtherSetting>
     <CoverOriginalFile>True</CoverOriginalFile>
     <CustomizeDirectory>True</CustomizeDirectory>
-    <CustomizeDirectoryName>scene01</CustomizeDirectoryName>
+    <CustomizeDirectoryName>scene2</CustomizeDirectoryName>
     <AutoSave>True</AutoSave>
     <Ios>False</Ios>
     <Android>False</Android>
     <Conventional>True</Conventional>
-    <SavePath>E:/work/projects/Github/CodeTraining/Laya/CodeTraning/bin/res/d3/scenes</SavePath>
+    <SavePath>E:/work/projects/git/drift/drift/code/client/trunk/PPSpeed/bin/res/d3/scenes</SavePath>
     <ScrollPositionY>0</ScrollPositionY>
   </config1>
   <config2>

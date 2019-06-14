@@ -1,5 +1,6 @@
 import GameConfig from "./GameConfig";
 import GameUI from "./script/GameUI";
+import TestScene3 from "./script/TestScene3";
 class Main {
 	constructor() {
 		//根据IDE设置初始化引擎		
@@ -31,6 +32,7 @@ class Main {
 		//加载IDE指定的场景
 		// GameConfig.startScene && Laya.Scene.open(GameConfig.startScene);
 		new GameUI();
+		// new TestScene3();
 	}
 }
 //激活启动类

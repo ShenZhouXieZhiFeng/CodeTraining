@@ -15,6 +15,14 @@ public class Move1 : MonoBehaviour
         float dt = (float)Time.time;
         float posX = Mathf.Sin(dt);
         float posY = Mathf.Cos(dt);
-        this.transform.position = new Vector3(posX,posY,0);
+        this.transform.position = new Vector3(posX, posY, 0);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        // Gizmos.DrawWireSphere(this.transform.position, 10);
+        // Gizmos.DrawLine()
+        
     }
 }

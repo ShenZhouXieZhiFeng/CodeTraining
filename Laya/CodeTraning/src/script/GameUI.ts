@@ -1,5 +1,5 @@
 import { ui } from "./../ui/layaMaxUI";
-import RES, { RESD3 } from "./RES";
+import RES, { RESD3, RESNormal } from "./RES";
 import { CubeController } from "./CubeController";
 import { CustomMaterial } from "./MaterialAndShader/CustomMaterial";
 import { UnlitMaterial } from "./MaterialAndShader/UnlitMaterial";
@@ -53,22 +53,22 @@ export default class GameUI
 
     private async setMat(box)
     {
-        // let spMat: UnlitMaterial = new UnlitMaterial();
-        // await spMat.compile();
-        // Laya.Texture2D.load("res/layabox.png", Laya.Handler.create(null, (tex) =>
-        // {
-        //     spMat.albedoTexture = tex;
-        // }));
-        // box.meshRenderer.material = spMat;
-
-        await CustomMaterial.compile();
-
-        let spMat: CustomMaterial = new CustomMaterial();
-        Laya.Texture2D.load("res/timg.jpg", Laya.Handler.create(null, (tex) =>
+        let spMat: UnlitMaterial = new UnlitMaterial();
+        await spMat.compile();
+        Laya.Texture2D.load("res/layabox.png", Laya.Handler.create(null, (tex) =>
         {
-            spMat.texture = tex;
+            spMat.albedoTexture = tex;
         }));
         box.meshRenderer.material = spMat;
+
+        // await CustomMaterial.compile();
+
+        // let spMat: CustomMaterial = new CustomMaterial();
+        // let img1 = await RESNormal.loadResByFullName("res/flower.jpg");
+        // let img2 = await RESNormal.loadResByFullName("res/wood.jpg");
+        // spMat.texture = img1;
+        // spMat.texture2 = img2;
+        // box.meshRenderer.material = spMat;
 
         // Laya.Texture2D.load("res/layabox.png", Laya.Handler.create(null, (tex) =>
         // {
@@ -76,7 +76,6 @@ export default class GameUI
         // }));
         // spMat.albedoColor = new Laya.Vector4(1, 0, 0, 1);
 
-
-        window['spMat'] = spMat;
+        // window['spMat'] = spMat;
     }
 }

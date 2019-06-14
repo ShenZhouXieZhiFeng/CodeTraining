@@ -6,6 +6,7 @@ export class CustomMaterial extends Laya.BaseMaterial
     static shaderName = "CustomShader";
 
     static TEXTURE = Laya.Shader3D.propertyNameToID("u_MainTex");
+    static TEXTURE2 = Laya.Shader3D.propertyNameToID("u_MainTex2");
     static COLOR = Laya.Shader3D.propertyNameToID("u_Color");
 
     constructor()
@@ -25,6 +26,11 @@ export class CustomMaterial extends Laya.BaseMaterial
         this._shaderValues.setTexture(CustomMaterial.TEXTURE, value);
     }
 
+    set texture2(value)
+    {
+        this._shaderValues.setTexture(CustomMaterial.TEXTURE2, value);
+    }
+
     public static async compile()
     {
         if (CustomMaterial.hasInit)
@@ -39,6 +45,7 @@ export class CustomMaterial extends Laya.BaseMaterial
         };
         let uniformMap: Object = {
             'u_MainTex': Laya.Shader3D.PERIOD_MATERIAL,
+            'u_MainTex2': Laya.Shader3D.PERIOD_MATERIAL,
             'u_Color': Laya.Shader3D.PERIOD_MATERIAL,
             'u_MvpMatrix': Laya.Shader3D.PERIOD_SPRITE
         };

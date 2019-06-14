@@ -15682,7 +15682,7 @@ var Texture=(function(_super){
 			this._destroyed=true;
 			if (this.bitmap){
 				this.bitmap._removeReference(this._referenceCount);
-				if (this.bitmap.referenceCount===0&&force)
+				if (this.bitmap.referenceCount===0||force)
 					this.bitmap.destroy();
 				this.bitmap=null;
 			}

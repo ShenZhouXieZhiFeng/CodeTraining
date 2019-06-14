@@ -17103,7 +17103,7 @@ declare module laya.resource {
         /**
          * 销毁纹理。
          */
-        destroy(): void;
+        destroy(force?): void;
     }
 }
 declare module laya.resource {

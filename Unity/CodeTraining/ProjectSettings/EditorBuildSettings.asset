@@ -6,6 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects: {}
+    path: Assets/TurnTheGameOn/Racing Game Template/Scenes/Garage.unity
+    guid: 5646c0a82b6798346a42e13521f0a9e9
+  - enabled: 1
+    path: Assets/TurnTheGameOn/Racing Game Template/Scenes/0Circuit Hills.unity
+    guid: f21c94d7f833f1640853e0be070b8b6f
+  - enabled: 1
+    path: Assets/TurnTheGameOn/Racing Game Template/Scenes/1Mountain Lake.unity
+    guid: 2187275825da18b478e3781525f47b7f
+  - enabled: 1
+    path: Assets/TurnTheGameOn/Racing Game Template/Scenes/2Race 2 Name.unity
+    guid: 2696e4cf3d609f744ab9e50b6277b448
+  - enabled: 1
+    path: Assets/TurnTheGameOn/Racing Game Template/Scenes/3Race 3 Name.unity
+    guid: 8968a25e4d9b931439df29435be5af4c
+  - enabled: 1
+    path: Assets/TurnTheGameOn/Racing Game Template/Scenes/4Race 4 Name.unity
+    guid: 7cf86ac69d1783046ac4b1d73d837c16
+  - enabled: 1
+    path: Assets/TurnTheGameOn/Racing Game Template/Scenes/M0Circuit Hills.unity
+    guid: aa27d40104e6d5b41bd87639ef834c78
+  - enabled: 1
+    path: Assets/TurnTheGameOn/Racing Game Template/Scenes/M1Mountain Lake.unity
+    guid: 6900a9dacae7cd44fb9059a2c222e203
+  - enabled: 1
+    path: Assets/TurnTheGameOn/Racing Game Template/Scenes/Disconnect.unity
+    guid: 3b001bda1794063478393f41be0ceec2

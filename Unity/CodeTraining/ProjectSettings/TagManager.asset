@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Car Collider
+  - Waypoint
   layers:
   - Default
   - TransparentFX
@@ -13,13 +15,13 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Road
+  - Player Model
+  - Render Texture
+  - Race Arrow
+  - Waypoint
   - 
   - 
   - 

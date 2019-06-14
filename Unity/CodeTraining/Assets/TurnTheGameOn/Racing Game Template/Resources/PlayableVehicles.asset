@@ -1,0 +1,774 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b1e1f96a99fcb43b0795b8bfe6c4b6, type: 3}
+  m_Name: PlayableVehicles
+  m_EditorClassIdentifier: 
+  startingCurrency: 3000000
+  paintPrice: 30000
+  brakeColorPrice: 4000
+  rimColorPrice: 8000
+  glassColorPrice: 3500
+  glowPrice: 3000
+  upgradeSpeedPrice: 50000
+  upgradeAccelerationPrice: 80000
+  upgradeBrakesPrice: 20000
+  upgradeTiresPrice: 30000
+  upgradeSteeringPrice: 40000
+  currentVehicleNumber: 0
+  numberOfCars: 10
+  playerName: Player
+  vehicles:
+  - {fileID: 198844, guid: 7f7518a8a0b68e442a7f8e3852feb7c7, type: 2}
+  - {fileID: 198844, guid: 92dc6808aa3141649b8c050dc8e2de01, type: 2}
+  - {fileID: 198844, guid: 0daf41d780a7784459317282c488dd51, type: 2}
+  - {fileID: 198844, guid: 9459662c7f6e407429dec36fb56166a4, type: 2}
+  - {fileID: 198844, guid: 0ec0cf26d9740c94abbfcab3f251c60f, type: 2}
+  - {fileID: 198844, guid: d904a46868ae49041902f84944a72d6a, type: 2}
+  - {fileID: 198844, guid: 739df10fc639a414ea3b30de161f8974, type: 2}
+  - {fileID: 198844, guid: daa247bc62a9da94887698f004797c36, type: 2}
+  - {fileID: 198844, guid: d36443ba688f6ac469e404488cfdfbd6, type: 2}
+  - {fileID: 198844, guid: a70622314eb260445a33104075b671d7, type: 2}
+  vehicleNames:
+  - Hatchback
+  - Hatchback 1
+  - Hatchback 2
+  - Hatchback 3
+  - Hatchback 4
+  - Hatchback 5
+  - Hatchback 6
+  - Hatchback 7
+  - Hatchback 8
+  - Hatchback 9
+  price: 00000000c8af0000701101001873010048e80100f049020020bf0200c8200300c0c80300d8b80500
+  carMaterial:
+  - {fileID: 2100000, guid: a962d84e8fb1c7140a4cb2b06ad47eef, type: 2}
+  - {fileID: 2100000, guid: 08bfa02ccf36d6948a80c3e4c1775593, type: 2}
+  - {fileID: 2100000, guid: e7f7f00583d6e3744866deba343ac49b, type: 2}
+  - {fileID: 2100000, guid: 43c82b108d5d14045804d88e88387ecf, type: 2}
+  - {fileID: 2100000, guid: 1ea7b693f141b8943bb99144928f8c4b, type: 2}
+  - {fileID: 2100000, guid: 57d46719d985b004d9e8ec3473aee521, type: 2}
+  - {fileID: 2100000, guid: 0eba20b504c14c349ab9e80ef900b67f, type: 2}
+  - {fileID: 2100000, guid: 7f108dc1039db4f41a9f22f43d3046c5, type: 2}
+  - {fileID: 2100000, guid: 3ce8a29620980b848b35c37f440775af, type: 2}
+  - {fileID: 2100000, guid: 5f18f1a921795f24c93f2d3700bd468b, type: 2}
+  brakeMaterial:
+  - {fileID: 2100000, guid: 2979cf962ffc17546b6a1dfcca045497, type: 2}
+  - {fileID: 2100000, guid: 8d8f51cdbc4c8e74bb93a857bea0f294, type: 2}
+  - {fileID: 2100000, guid: e8eebb5fa752df4448d9eaf7ced8dc40, type: 2}
+  - {fileID: 2100000, guid: e7436089935917d4a9f3ab554a34e036, type: 2}
+  - {fileID: 2100000, guid: 7ac61beaf699e7641aba903b5bdb1bfa, type: 2}
+  - {fileID: 2100000, guid: 78543a04aee41174dbbcf0f427fd8d36, type: 2}
+  - {fileID: 2100000, guid: 801d8da6233b27a4b9bed74e483c1ad4, type: 2}
+  - {fileID: 2100000, guid: 7e7e0d786e201e7448da3bc4cca2a245, type: 2}
+  - {fileID: 2100000, guid: 318a686049f51fb4f9a277ea4066b864, type: 2}
+  - {fileID: 2100000, guid: 20200eec3ca51ba4cbcca7a175cd1235, type: 2}
+  glassMaterial:
+  - {fileID: 2100000, guid: c2b767cbdf40d224e83cf1a7aca92c93, type: 2}
+  - {fileID: 2100000, guid: 5fd8b50af459f8c4882d6dbbb524bfec, type: 2}
+  - {fileID: 2100000, guid: ece6569eb0f89314c9ea9a583af46829, type: 2}
+  - {fileID: 2100000, guid: 417916f03a5d86943bef5f9b9346dcb5, type: 2}
+  - {fileID: 2100000, guid: f2ef09b066e0a4541bc936be3882abf5, type: 2}
+  - {fileID: 2100000, guid: 59880c3a90463cc4db0475e24953ca18, type: 2}
+  - {fileID: 2100000, guid: 569212e8cffec034a9b7b90084fcaabc, type: 2}
+  - {fileID: 2100000, guid: fe45233a4433d87469e995f31a56bf90, type: 2}
+  - {fileID: 2100000, guid: b203a75da2a2e914996087d9a1b44631, type: 2}
+  - {fileID: 2100000, guid: e837db94812f6d24780642998c128d1d, type: 2}
+  rimMaterial:
+  - {fileID: 2100000, guid: 711b7647fa78125449c0e38cc861ff49, type: 2}
+  - {fileID: 2100000, guid: 4d63d38bc98bf4f4bbec08802a88bb56, type: 2}
+  - {fileID: 2100000, guid: 8664b6305e9c92440b303fa60fbed378, type: 2}
+  - {fileID: 2100000, guid: 00164356dda811446a9c72915b3eaa1c, type: 2}
+  - {fileID: 2100000, guid: 0bff33f7046361946b58357f39144df1, type: 2}
+  - {fileID: 2100000, guid: 44ba8f6e45648864f874540245460584, type: 2}
+  - {fileID: 2100000, guid: 0ce8ebd541d745e49892506f2d9dfb63, type: 2}
+  - {fileID: 2100000, guid: 70d71c27e23429440b586f59ebf42360, type: 2}
+  - {fileID: 2100000, guid: 62edac41f805f6c4b8896b37a1d070de, type: 2}
+  - {fileID: 2100000, guid: 5512f7605e18bef489a64369dda9ed9a, type: 2}
+  defaultBodyColors:
+  - {r: 1, g: 0.80689657, b: 0, a: 0}
+  - {r: 0, g: 1, b: 0, a: 0}
+  - {r: 1, g: 0.51724136, b: 0, a: 0}
+  - {r: 1, g: 0.9724138, b: 0, a: 0}
+  - {r: 0.36198616, g: 1, b: 0.497, a: 0}
+  - {r: 0, g: 0, b: 1, a: 0}
+  - {r: 0.9616723, g: 0, b: 0.6376268, a: 0}
+  - {r: 0.363, g: 0.682, b: 0.972, a: 0}
+  - {r: 0.26113757, g: 0.3063328, b: 0.33823532, a: 0}
+  - {r: 1, g: 1, b: 1, a: 0}
+  defaultBrakeColors:
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  defaultGlassColors:
+  - {r: 0.11764705, g: 0.11764705, b: 0.11764705, a: 0.747}
+  - {r: 0, g: 0, b: 0.031344905, a: 1}
+  - {r: 0.11764705, g: 0.11764705, b: 0.11764705, a: 0.747}
+  - {r: 0.11764705, g: 0.11764705, b: 0.11764705, a: 0.747}
+  - {r: 0.11764705, g: 0.11764705, b: 0.11764705, a: 0.747}
+  - {r: 0.11764705, g: 0.11764705, b: 0.11764705, a: 0.747}
+  - {r: 0.11764705, g: 0.11764705, b: 0.11764705, a: 0.747}
+  - {r: 0.11764705, g: 0.11764705, b: 0.11764705, a: 0.747}
+  - {r: 0.11764705, g: 0.11764705, b: 0.11764705, a: 0.747}
+  - {r: 0.11764705, g: 0.11764705, b: 0.11764705, a: 0.747}
+  defaultRimColors:
+  - {r: 1, g: 1, b: 1, a: 0}
+  - {r: 1, g: 1, b: 1, a: 0}
+  - {r: 1, g: 1, b: 1, a: 0}
+  - {r: 1, g: 1, b: 1, a: 0}
+  - {r: 1, g: 1, b: 1, a: 0}
+  - {r: 1, g: 1, b: 1, a: 0}
+  - {r: 1, g: 1, b: 1, a: 0}
+  - {r: 1, g: 1, b: 1, a: 0}
+  - {r: 1, g: 1, b: 1, a: 0}
+  - {r: 1, g: 1, b: 1, a: 0}
+  defaultNeonColors:
+  - {r: 0, g: 0, b: 0, a: 0.101960786}
+  - {r: 0, g: 0, b: 0, a: 0.101960786}
+  - {r: 0, g: 0, b: 0, a: 0.101960786}
+  - {r: 0, g: 0, b: 0, a: 0.101960786}
+  - {r: 0, g: 0, b: 0, a: 0.101960786}
+  - {r: 0, g: 0, b: 0, a: 0.101960786}
+  - {r: 0, g: 0, b: 0, a: 0.101960786}
+  - {r: 0, g: 0, b: 0, a: 0.101960786}
+  - {r: 0, g: 0, b: 0, a: 0.101960786}
+  - {r: 0, g: 0, b: 0, a: 0.101960786}
+  carGlowLight:
+  - {fileID: 19821724, guid: 7f7518a8a0b68e442a7f8e3852feb7c7, type: 2}
+  - {fileID: 19821724, guid: 92dc6808aa3141649b8c050dc8e2de01, type: 2}
+  - {fileID: 19821724, guid: 0daf41d780a7784459317282c488dd51, type: 2}
+  - {fileID: 19821724, guid: 9459662c7f6e407429dec36fb56166a4, type: 2}
+  - {fileID: 19821724, guid: 0ec0cf26d9740c94abbfcab3f251c60f, type: 2}
+  - {fileID: 19821724, guid: d904a46868ae49041902f84944a72d6a, type: 2}
+  - {fileID: 19821724, guid: 739df10fc639a414ea3b30de161f8974, type: 2}
+  - {fileID: 19821724, guid: daa247bc62a9da94887698f004797c36, type: 2}
+  - {fileID: 19821724, guid: d36443ba688f6ac469e404488cfdfbd6, type: 2}
+  - {fileID: 19821724, guid: a70622314eb260445a33104075b671d7, type: 2}
+  carUnlocked: 01000000000000000000
+  topSpeedLevel: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  torqueLevel: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  brakeTorqueLevel: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  tireTractionLevel: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  steerSensitivityLevel: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  carBodyColorPreset:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0.986207, g: 0, b: 1, a: 1}
+  - {r: 0.19999981, g: 0, b: 1, a: 1}
+  - {r: 0, g: 0.66896534, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0.17241383, a: 1}
+  - {r: 1, g: 0.9724139, b: 0, a: 1}
+  - {r: 1, g: 0.51724136, b: 0, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  carGlassColorPreset:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0.986207, g: 0, b: 1, a: 1}
+  - {r: 0.19999981, g: 0, b: 1, a: 1}
+  - {r: 0, g: 0.66896534, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0.17241383, a: 1}
+  - {r: 1, g: 0.9724139, b: 0, a: 1}
+  - {r: 1, g: 0.51724136, b: 0, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  carBrakeColorPreset:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0.986207, g: 0, b: 1, a: 1}
+  - {r: 0.19999981, g: 0, b: 1, a: 1}
+  - {r: 0, g: 0.66896534, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0.17241383, a: 1}
+  - {r: 1, g: 0.9724139, b: 0, a: 1}
+  - {r: 1, g: 0.51724136, b: 0, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  carRimColorPreset:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0.986207, g: 0, b: 1, a: 1}
+  - {r: 0.19999981, g: 0, b: 1, a: 1}
+  - {r: 0, g: 0.66896534, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0.17241383, a: 1}
+  - {r: 1, g: 0.9724139, b: 0, a: 1}
+  - {r: 1, g: 0.51724136, b: 0, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  carNeonColorPreset:
+  - {r: 1, g: 0, b: 0, a: 0.5921569}
+  - {r: 0.986207, g: 0, b: 1, a: 0.5921569}
+  - {r: 0.19999981, g: 0, b: 1, a: 0.5921569}
+  - {r: 0, g: 0.66896534, b: 1, a: 0.5921569}
+  - {r: 0, g: 1, b: 0.17241383, a: 0.5921569}
+  - {r: 1, g: 0.9724139, b: 0, a: 0.5921569}
+  - {r: 1, g: 0.51724136, b: 0, a: 0.5921569}
+  - {r: 1, g: 1, b: 1, a: 0.5921569}
+  - {r: 0, g: 0, b: 0, a: 0.5921569}
+  rearMirror: 1
+  sideMirrors: 1
+  reflectionProbe: 1
+  speedometerType: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  vehicleUpgrades:
+  - tireTraction:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    steerSensitivity:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    topSpeed:
+    - 5
+    - 5
+    - 5
+    - 5
+    - 5
+    - 5
+    - 5
+    - 5
+    - 5
+    - 5
+    acceleration:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    brakePower:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - tireTraction:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    steerSensitivity:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    topSpeed:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    acceleration:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    brakePower:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - tireTraction:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    steerSensitivity:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    topSpeed:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    acceleration:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    brakePower:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - tireTraction:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    steerSensitivity:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    topSpeed:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    acceleration:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    brakePower:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - tireTraction:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    steerSensitivity:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    topSpeed:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    acceleration:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    brakePower:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - tireTraction:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    steerSensitivity:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    topSpeed:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    acceleration:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    brakePower:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - tireTraction:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    steerSensitivity:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    topSpeed:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    acceleration:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    brakePower:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - tireTraction:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    steerSensitivity:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    topSpeed:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    acceleration:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    brakePower:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - tireTraction:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    steerSensitivity:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    topSpeed:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    acceleration:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    brakePower:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - tireTraction:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    steerSensitivity:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    topSpeed:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    acceleration:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    brakePower:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  fixedMiniMapRotation: 0
+  manual: 0
+  EVPSupport: 0

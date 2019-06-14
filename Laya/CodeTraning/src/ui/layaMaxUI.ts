@@ -4,7 +4,8 @@ import Dialog=Laya.Dialog;
 import Scene=Laya.Scene;
 var REG: Function = Laya.ClassUtils.regClass;
 export module ui.test {
-    export class TestSceneUI extends Laya.Scene {
+    export class TestSceneUI extends Scene {
+		public spTest1:Laya.Sprite;
         constructor(){ super()}
         createChildren():void {
             super.createChildren();
